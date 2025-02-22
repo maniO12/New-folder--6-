@@ -7,7 +7,7 @@
     <h1>Innovate. Learn. Connect.</h1>
     <p>Join the most exciting tech conference of the year. Discover trends, connect with experts, and shape the future.</p>
     <div class="hero-buttons">
-      <a href="/register" class="btn primary">Register Now</a>
+      <a href="/contact" class="btn primary">Register Now</a>
       <a href="/schedule" class="btn secondary">View Schedule</a>
     </div>
   </div>
