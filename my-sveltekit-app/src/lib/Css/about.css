@@ -1,0 +1,180 @@
+/* About Section */
+.about-section {
+    padding: 100px 20px;
+    text-align: center;
+    background: #ffffff;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.dark-mode .about-section {
+    background: var(--bg-dark);
+}
+
+/* About Card */
+.about-card {
+    max-width: 900px;
+    margin: auto;
+    padding: 50px;
+    border-radius: 15px;
+    background: #ffffff;
+    backdrop-filter: blur(10px);
+    border: 2px solid var(--border-glow);
+    box-shadow: 0px 6px 30px var(--shadow-glow);
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+    color: #000000; 
+}
+
+.dark-mode .about-card {
+    background: var(--card-bg-dark);
+    color: #ffffff; 
+}
+
+/* Title */
+.about-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--primary);
+    transition: color 0.3s ease-in-out;
+}
+
+.dark-mode .about-title {
+    color: #ffffff;
+}
+
+/* Description */
+.about-description {
+    font-size: 1.3rem;
+    margin: 20px 0;
+    line-height: 1.6;
+    color: #000000;
+    transition: color 0.3s ease-in-out;
+}
+
+.dark-mode .about-description {
+    color: #ffffff;
+}
+
+/* Highlights */
+.highlight-title {
+    font-size: 2rem;
+    margin-top: 30px;
+    color: var(--primary);
+}
+
+.dark-mode .highlight-title {
+    color: #ffffff;
+}
+
+.highlights {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.highlights li {
+    font-size: 1.2rem;
+    margin: 12px 0;
+    padding: 14px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: rgba(0, 0, 0, 0.05);
+    border-left: 4px solid var(--primary);
+    transition: all 0.3s ease-in-out;
+    color: #000000;
+}
+
+.highlights li:hover {
+    transform: scale(1.05);
+    background: rgba(16, 163, 127, 0.2);
+}
+
+.dark-mode .highlights li {
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+}
+
+/* Details Section */
+.about-details {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.detail-card {
+    flex: 1;
+    min-width: 280px;
+    padding: 20px;
+    border-radius: 12px;
+    background: rgba(0, 0, 0, 0.05);
+    border-left: 4px solid var(--primary);
+    transition: all 0.3s ease-in-out;
+    color: #000000;
+}
+
+.dark-mode .detail-card {
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+}
+
+/* Call to Action Buttons */
+/* Call to Action Buttons */
+.cta {
+    margin-top: 30px;
+}
+
+.cta-btn {
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background: var(--primary);
+    color: green; 
+    transition: all 0.3s ease-in-out;
+    margin: 10px;
+}
+
+.cta-btn:hover {
+    background: var(--secondary);
+}
+
+/* Secondary CTA Button */
+.secondary {
+    background: transparent;
+    border: 2px solid var(--primary);
+    color: var(--primary);
+}
+
+.secondary:hover {
+    background: var(--primary);
+    color: #ffffff;
+}
+                    
+
+/* Responsive */
+@media (max-width: 768px) {
+    .about-card {
+        padding: 35px;
+    }
+    .about-title {
+        font-size: 2.5rem;
+    }
+    .about-description {
+        font-size: 1.1rem;
+    }
+    .highlights li {
+        font-size: 1rem;
+        padding: 10px;
+    }
+    .cta-btn {
+        font-size: 1rem;
+        padding: 10px 15px;
+    }
+}
+
